@@ -2,7 +2,7 @@
 
 ## The source code was sourced by forking the repo from a public github repo.
 
-## i made some commit to the requirements.txt file because of some of the depenendencies versions where not compatible. 
+##  some adjustments made, some commit to the requirements.txt file because of some of the depenendencies versions where not compatible. 
 ## for instance rembg can only be compatible with some flask version.
 
 
