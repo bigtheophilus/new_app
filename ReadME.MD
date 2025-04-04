@@ -20,6 +20,7 @@ The following steps outline the installation and setup process for this applicat
     ```
 
 2.  **Update Package Lists:**
+<<<<<<< HEAD
 
     ```bash
     apt-get update
@@ -45,8 +46,14 @@ The following steps outline the installation and setup process for this applicat
     python3 -m venv .venv
     source .venv/bin/activate
     
+=======
+>>>>>>> a437b167c6c4da777163f8263c5556e3b86cb3cc
 
+    ```bash
+    apt-get update
+    ```
 
+<<<<<<< HEAD
 6.  **Install pip (if not already present):**
 
     ```bash
@@ -86,13 +93,62 @@ The following steps outline the installation and setup process for this applicat
 
     ```bash
     python3 -m pip install -r requirements.txt
+=======
+3.  **Install Python Virtual Environment:**
 
+    ```bash
+    apt install python3.12-venv -y
+    ```
 
+    ![Install venv](images/Screenshot 2025-04-04 020830.png_1.png)
+>>>>>>> a437b167c6c4da777163f8263c5556e3b86cb3cc
 
+4.  **Clone the Repository:**
+
+    ```bash
+    git clone [https://github.com/bigtheophilus/background-remover-python-app.git](https://github.com/bigtheophilus/background-remover-python-app.git)
+    ```
+
+<<<<<<< HEAD
 
 ![alt text](<images/Screenshot 2025-04-04 022742.png_6.1.png>)
+=======
+    ![Clone repo](images/Screenshot 2025-04-04 021114.png_2.png)
 
+5.  **Create and Activate Virtual Environment:**
 
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
+
+    ![Create venv](images/Screenshot 2025-04-04 021340.png_3.png)
+    ![Activate venv](images/Screenshot 2025-04-04 021531.png_3.png)
+
+6.  **Install pip (if not already present):**
+
+    ```bash
+    apt install pip
+    ```
+
+    ![Install pip](images/Screenshot 2025-04-04 021709.png_4.png)
+
+7.  **Verify pip Installation:**
+
+    ```bash
+    pip --version
+    ```
+
+    ![pip version](images/Screenshot 2025-04-04 022018.png_5.png)
+
+8.  **Navigate to Application Directory:**
+>>>>>>> a437b167c6c4da777163f8263c5556e3b86cb3cc
+
+    ```bash
+    cd background-remover-python-app/
+    ```
+
+<<<<<<< HEAD
 
 12. **Install `onnxruntime` Separately:**
 
@@ -122,3 +178,70 @@ The following steps outline the installation and setup process for this applicat
 ![application page](<images/Screenshot 2025-04-04 023812.png_9.png>)
 
 Collapse
+=======
+9.  **Install Dependencies from `requirements.txt` (Initial Attempt):**
+
+    ```bash
+    python3 -m pip install -r requirements.txt
+    ```
+
+10. **View `app.py` and `requirements.txt` (for debugging/inspection):**
+
+    ```bash
+    cat app.py
+    nano requirements.txt
+    ```
+
+11. **Re-install `requirements.txt` after adjustments:**
+
+    ```bash
+    python3 -m pip install -r requirements.txt
+    ```
+
+    ![requirements.txt view](images/Screenshot 2025-04-04 022630.png_6.png)
+    ![requirements.txt nano](images/Screenshot 2025-04-04 022742.png_6.1.png)
+
+12. **Install `onnxruntime` Separately:**
+
+    ```bash
+    pip install onnxruntime
+    ```
+
+    ![Install onnxruntime](images/Screenshot 2025-04-04 023046.png_7.png)
+
+13. **Run the Application:**
+
+    ```bash
+    python3 app.py
+    ```
+
+    ![Run app](images/Screenshot 2025-04-04 023450.png_8.png)
+
+## Issues Encountered:
+
+* The original `requirements.txt` did not include `onnxruntime`, which is essential for the application.
+* Installing `requirements.txt` as-is resulted in dependency conflicts.
+* The solution was to:
+    * Adjust the `requirements.txt` to compatible version.
+    * Install `onnxruntime` separately using `pip`.
+
+## Application Output:
+
+![Application Output](images/Screenshot 2025-04-04 023812.png_9.png)
+Collapse
+   
+   
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+>>>>>>> a437b167c6c4da777163f8263c5556e3b86cb3cc
